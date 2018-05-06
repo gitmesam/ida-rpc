@@ -11,4 +11,7 @@ To install ida-rpc simply copy the two binaries from the [latest release](https:
 to change options within the plugin open the plugins menu and select IDA RPC ```Edit -> Plugins -> IDA RPC``` or use the default hotkey ```Ctrl-Alt-R```
 
 ## :flushed:
-Didnt see any point in uploading source as its such a simple plugin, will upload if requested though
+~~Didnt see any point in uploading source as its such a simple plugin, will upload if requested though~~
+
+## Building
+To build this solution you'll need to get a copy of the [IDA 7.x SDK](https://www.hex-rays.com/products/ida/support/download.shtml), compile in 64bit Release for 32bit ida and 64bit Release64 for 64bit ida
