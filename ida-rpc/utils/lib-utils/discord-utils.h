@@ -5,20 +5,23 @@ namespace discord_utils
 {
 	static void handle_discord_ready( ) {
 
-		if ( g_options.output_type >= ( int )output_type::errors_results_and_interim_steps && g_options.output_enabled )
+		if ( g_options.output_type >= ( int )output_type::errors_results_and_interim_steps && g_options.output_enabled ) {
 			msg( "Discord: ready\n" );
+		}
 	}
 
 	static void handle_discord_disconnected( int errcode, const char* message ) {
 
-		if ( g_options.output_type >= ( int )output_type::errors_only && g_options.output_enabled )
+		if ( g_options.output_type >= ( int )output_type::errors_only && g_options.output_enabled ) {
 			msg( "Discord: disconnected (%d: %s)\n", errcode, message );
+		}
 	}
 
 	static void handle_discord_error( int errcode, const char* message ) {
 
-		if ( g_options.output_type >= ( int )output_type::errors_only && g_options.output_enabled )
+		if ( g_options.output_type >= ( int )output_type::errors_only && g_options.output_enabled ) {
 			msg( "Discord: error (%d: %s)\n", errcode, message );
+		}
 	}
 
 	static void discord_init( const char* app_id ) {
