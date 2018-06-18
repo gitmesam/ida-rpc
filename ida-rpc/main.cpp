@@ -201,7 +201,7 @@ static int idaapi hook_callbacks( ) {
 			msg( "[%s] %s -> hook_to_notification_point( HT_VIEW ) was successful\n", IDAP_name, __FUNCTION__ );
 		}
 	}
-
+	/*
 	// OUTPUT callback hook ////////////////////////////////////////////////////////////////////////////////////////////
 	if ( !hook_to_notification_point( HT_OUTPUT, ( hook_cb_t* )callbacks::output_callback ) ) {
 
@@ -217,6 +217,7 @@ static int idaapi hook_callbacks( ) {
 			msg( "[%s] %s -> hook_to_notification_point( HT_OUTPUT ) was successful\n", IDAP_name, __FUNCTION__ );
 		}
 	}
+	*/
 }
 
 static void idaapi unhook_callbacks( ) {
